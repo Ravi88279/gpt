@@ -1,75 +1,67 @@
+/* styles.css */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f7f9fc;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 header {
-  background: #0a1f44;
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 0;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
-nav a:hover {
-  color: #ff6a00;
-}
+
 .hero {
-  background: url('images/hero.jpg') no-repeat center center/cover;
-  color: white;
-  padding: 6rem 2rem;
-  text-align: center;
+    text-align: center;
+    padding: 50px;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
 }
-.cta-button {
-  background: #ff6a00;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  transition: background 0.3s ease-in-out;
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
 }
-.cta-button:hover {
-  background: #cc5500;
+
+.services {
+    text-align: center;
+    padding: 50px;
 }
-.feature-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
+
+.service-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-.feature-item {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  max-width: 300px;
-  flex: 1;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+.service {
+    padding: 20px;
+    background-color: #f4f4f4;
+    width: 200px;
+    text-align: center;
 }
-.feature-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+
 footer {
-  background: #0a1f44;
-  color: white;
-  text-align: center;
-  padding: 2rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
