@@ -4,64 +4,84 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8f9fa;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
+    padding: 20px 10%;
+    background-color: #222;
     color: white;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
     text-align: center;
-    padding: 50px;
+    padding: 100px 20px;
     background: url('hero-image.jpg') no-repeat center center/cover;
     color: white;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     background-color: #007BFF;
     color: white;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 .services {
     text-align: center;
-    padding: 50px;
+    padding: 80px 10%;
+    background: white;
 }
 
 .service-boxes {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .service {
-    padding: 20px;
-    background-color: #f4f4f4;
-    width: 200px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
     text-align: center;
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #222;
     color: white;
+    margin-top: 50px;
 }
